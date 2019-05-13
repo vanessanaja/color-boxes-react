@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Box.css';
 import { choice } from './helpers';
+import './Box.css';
 
 class Box extends Component{
   static defaultProps = {
-    allColors: ['purple', 'magenta', 'lilac', 'pink']
+    allColors: ['purple', 'magenta', 'blue', 'pink']
   };
   constructor(props){
     super(props);

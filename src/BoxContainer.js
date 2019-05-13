@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Box from './Box';
+import './BoxContainer.css'
 
-class BoxContainer extends Component{
+class BoxContainer extends Component {
   static defaultProps = {
     numBoxes: 18 
   };
