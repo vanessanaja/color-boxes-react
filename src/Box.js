@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Box.css';
+import { choice } from './helpers';
 
 class Box extends Component{
   static defaultProps = {
@@ -7,7 +8,7 @@ class Box extends Component{
   };
   constructor(props){
     super(props);
-    this.state = {color: 'blue '};
+    this.state = {color: choice(this.props.allColors)};
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick(){
